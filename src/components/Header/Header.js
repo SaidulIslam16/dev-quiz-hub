@@ -6,7 +6,7 @@ const Header = () => {
         <nav className='bg-slate-200'>
             <div className='flex justify-between py-4 mx-24'>
                 <div className="logo">
-                    <h1 className='text-2xl font-bold'>Dev Quiz Hub</h1>
+                    <h1 className='text-2xl font-bold text-blue-600'>Dev Quiz Hub</h1>
                 </div>
                 <div className="links">
                     <NavLink className='mx-2' to='/'>Home</NavLink>
