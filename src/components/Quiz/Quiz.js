@@ -5,6 +5,8 @@ import QuizBody from '../QuizBody/QuizBody';
 const Quiz = () => {
     const quizData = useLoaderData();
     const questions = quizData.data.questions;
+    console.log(questions);
+
     return (
         <div className='mx-24'>
             <h1 className='text-3xl my-10 font-bold text-center'>Test your Knowledge Here:</h1>
