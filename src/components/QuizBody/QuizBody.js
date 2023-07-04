@@ -32,7 +32,7 @@ const QuizBody = ({ quiz }) => {
             <div className=' p-4 shadow-md rounded-lg'>
                 <div className='flex items-center justify-around'>
                     <h3 className='text-xl font-bold text-center'>{question}</h3>
-                    <button onClick={showCorrectAnswer}>Check Correct</button>
+                    <button onClick={showCorrectAnswer} className='bg-blue-600 py-2 px-5 rounded-lg text-white'>Check Correct</button>
                 </div>
                 <div className='grid grid-cols-2 gap-3 mt-5'>
                     {
