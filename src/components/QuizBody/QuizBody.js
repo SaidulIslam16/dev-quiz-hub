@@ -6,7 +6,7 @@ export const AnswerContext = createContext();
 
 const QuizBody = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz;
-    console.log(question);
+    // console.log(question);
 
     const checkAnswer = (answer) => {
         console.log(correctAnswer);
@@ -29,7 +29,7 @@ const QuizBody = ({ quiz }) => {
     }
     return (
         <AnswerContext.Provider value={[checkAnswer]}>
-            <div className=' p-4 shadow-md rounded-lg'>
+            <div className=' p-4 shadow-md rounded-lg mx-7'>
                 <div className='flex items-center justify-around'>
                     <h3 className='text-xl font-bold text-center'>{question}</h3>
                     <button onClick={showCorrectAnswer} className='bg-blue-600 py-2 px-5 rounded-lg text-white'>Check Correct</button>
