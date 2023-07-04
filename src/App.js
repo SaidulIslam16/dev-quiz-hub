@@ -20,7 +20,13 @@ function App() {
         },
         { path: '/blog', element: <Blog></Blog> },
         { path: '/statistics', element: <Statistics></Statistics> },
-        { path: 'quiz/:id', element: <Quiz></Quiz> }
+        {
+          path: 'quiz/:id',
+          element: <Quiz></Quiz>,
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          }
+        }
       ]
     },
     { path: "*", element: <h1 className='text-5xl font-bold'>404: The Path Don't Exist</h1> }
